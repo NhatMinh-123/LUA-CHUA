@@ -1,2 +1,2 @@
-# LUA-CHUA
+# GĂME
 Low graphic game
