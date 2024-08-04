@@ -268,3 +268,152 @@ void update()
     	}
 	}
 }
+void graphics()
+{
+	window.clear();
+	window.render(0, 0, bgTexture);
+	for (Hole& h : holes)
+	{
+		window.render(h);
+	}
+	for (Ball& b : balls)
+	{
+		if (!b.isWin())
+		{
+			window.render(b.getPos().x, b.getPos().y + 4, ballShadowTexture);
+		}
+		for (Entity& e : b.getPoints())
+		{
+			window.render(e);
+		}
+		window.render(b);
+	}
+	for (Tile& t : tiles)
+	{ 
+		window.render(t);
+	}
+	for (Ball& b : balls)
+	{
+		for (Entity& e : b.getPowerBar())
+		{
+			window.render(e);
+		}
+		window.render(b.getPowerBar().at(0).getPos().x, b.getPowerBar().at(0).getPos().y, powerMeterTexture_overlay);
+		
+	}
+	if (state != 2)
+	{
+		window.render(640/4 - 132/2, 480 - 32, levelTextBgTexture);
+		window.renderCenter(-160, 240 - 16 + 3, getLevelText(0), font24, black);
+		window.renderCenter(-160, 240 - 16, getLevelText(0), font24, white);
+
+		window.render(640/2 + 640/4 - 132/2, 480 - 32, levelTextBgTexture);
+		window.renderCenter(160, 240 - 16 + 3, getLevelText(1), font24, black);
+		window.renderCenter(160, 240 - 16, getLevelText(1), font24, white);
+
+		window.render(640/2 - 196/2, 0, uiBgTexture);
+		window.renderCenter(0, -240 + 16 + 3, getStrokeText(), font24, black);
+		window.renderCenter(0, -240 + 16, getStrokeText(), font24, white);
+	}
+	else
+	{
+		window.render(0, 0, endscreenOverlayTexture);
+		window.renderCenter(0, 3 - 32, "YOU COMPLETED THE COURSE!", font48, black);
+		window.renderCenter(0, -32, "YOU COMPLETED THE COURSE!", font48, white);
+		window.renderCenter(0, 3 + 32, getStrokeText(), font32, black);
+		window.renderCenter(0, 32, getStrokeText(), font32, white);
+	}
+	window.display();
+}
+
+void titleScreen()
+{
+	if (SDL_GetTicks() < 2000)
+	{
+		if (!swingPlayed)
+		{
+			Mix_PlayChannel(-1, swingSfx, 0);
+			swingPlayed = true;
+		}
+		//Get our controls and events
+		while (SDL_PollEvent(&event))
+		{
+			switch(event.type)
+			{
+			case SDL_QUIT:
+				gameRunning = false;
+				break;
+			}
+		}
+
+		window.clear();
+		window.render(0, 0, bgTexture);
+		window.render(0, 0, splashBgTexture);
+		window.renderCenter(0, 0 + 3, "POLYMARS", font32, black);
+		window.renderCenter(0, 0, "POLYMARS", font32, white);
+		window.display();
+	}
+	else
+	{
+		if (!secondSwingPlayed)
+		{
+			Mix_PlayChannel(-1, swingSfx, 0);
+			secondSwingPlayed = true;
+		}
+		lastTick = currentTick;
+		currentTick = SDL_GetPerformanceCounter();
+		deltaTime = (double)((currentTick - lastTick)*1000 / (double)SDL_GetPerformanceFrequency() );
+
+		//Get our controls and events
+		while (SDL_PollEvent(&event))
+		{
+			switch(event.type)
+			{
+			case SDL_QUIT:
+				gameRunning = false;
+				break;
+			case SDL_MOUSEBUTTONDOWN:
+				if (event.button.button == SDL_BUTTON_LEFT)
+				{
+					Mix_PlayChannel(-1, holeSfx, 0);
+					state = 1;
+				}
+				break;
+			}
+		}
+		window.clear();
+		window.render(0, 0, bgTexture);
+		window.render(320 - 160, 240 - 100 - 50 + 4*SDL_sin(SDL_GetTicks()*(3.14/1500)), logoTexture);
+		window.render(0, 0, click2start);
+		window.renderCenter(0, 240 - 48 + 3 - 16*5, "LEFT CLICK TO START", font32, black);
+		window.renderCenter(0, 240 - 48 - 16*5, "LEFT CLICK TO START", font32, white);
+		window.display();
+	}
+}
+void game()
+{
+	if (state == 0)
+	{
+		titleScreen();
+	}
+	else
+	{
+		update();
+		graphics();
+	}
+}
+int main(int argc, char* args[])
+{
+	loadLevel(level);
+	while (gameRunning)
+	{
+		game();
+	}
+
+	window.cleanUp();
+	TTF_CloseFont(font32);
+	TTF_CloseFont(font24);
+	SDL_Quit();
+	TTF_Quit();
+	return 0;
+}
