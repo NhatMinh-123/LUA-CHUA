@@ -268,6 +268,7 @@ void update()
     	}
 	}
 }
+
 void graphics()
 {
 	window.clear();

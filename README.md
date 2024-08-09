@@ -1,2 +1,0 @@
-# GĂME
-Low graphic game
