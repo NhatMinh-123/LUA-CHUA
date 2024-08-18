@@ -37,3 +37,45 @@ Background của game
 ![alt text](ball.png) quả bóng 
 ![alt text](point.png) công cụ điều hướng bóng 
 
+# Source code:
+
+Classes: 
+File renderwindow này quản lý việc tạo cửa sổ, tải và hiển thị texture, vẽ các thực thể và văn bản lên màn hình trong game "Twini Golf" bằng SDL2.
+File Entity: Định nghĩa một thực thể trong game với các thuộc tính như vị trí, góc xoay, tỷ lệ, và texture, đồng thời cung cấp các phương thức để thao tác và cập nhật những thuộc tính này.
+
+File Tile: Định nghĩa một ô gạch (tile) trong game, kế thừa từ Entity, sử dụng để xây dựng các thành phần bản đồ hoặc môi trường
+
+File Ball quản lý việc di chuyển, va chạm, và trạng thái của quả bóng trong game "Twini Golf", đồng thời điều khiển hiệu ứng âm thanh và kiểm tra điều kiện thắng khi bóng vào hố.
+
+File Hole định nghĩa một hố golf trong game "Twini Golf", kế thừa từ Entity, để quản lý vị trí và texture của hố.
+
+Nhiệm vụ của file main: 
+File main.cpp là file chính của game "Twini-Golf". Nhiệm vụ chính của file này là khởi tạo và quản lý vòng đời của game, bao gồm:
+
+Khởi tạo và tải tài nguyên:
+
+    Khởi tạo SDL và các thư viện phụ trợ như SDL_image, SDL_ttf, SDL_mixer.
+    Tải các tài nguyên cần thiết như texture, âm thanh, và font chữ.
+    Quản lý trạng thái game:
+
+    state điều khiển các trạng thái khác nhau của game như màn hình tiêu đề, chơi game, và màn hình kết thúc.
+    Hàm game() kiểm soát luồng xử lý dựa trên trạng thái hiện tại.
+    Xử lý các sự kiện và cập nhật game:
+
+    Hàm update() cập nhật trạng thái của game dựa trên thời gian thực và các sự kiện từ người chơi như nhấn chuột.
+    Các đối tượng như Ball và Hole được cập nhật vị trí, tốc độ, và xử lý va chạm.
+    Render đồ họa:
+
+    Hàm graphics() đảm nhiệm việc vẽ toàn bộ các đối tượng trong game lên màn hình, từ các hố golf, bóng, gạch lát nền, đến giao diện người dùng.
+    Chạy vòng lặp game:
+
+    Vòng lặp chính trong main() chạy liên tục cho đến khi người chơi thoát game, đảm bảo cập nhật và vẽ lại màn hình trong mỗi khung hình.
+    Dọn dẹp tài nguyên:
+
+    Khi game kết thúc, các tài nguyên được dọn dẹp và bộ nhớ được giải phóng.
+
+Reference:
+    Code:https://github.com/PolyMarsDev/Twini-Golf/tree/main
+    Graphic: PolymarsDev
+    Font:CstBerlinWest Original Regular : Download For Free, View Sample Text, Rating And More On Fontsgeek.Com 
+    Sound: https://freesound.org/
