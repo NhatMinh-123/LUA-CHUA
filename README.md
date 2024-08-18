@@ -33,8 +33,7 @@ Các chướng ngại vật của game
 
 ![alt text](bg.png)
 Background của game
-![alt text](ball.png)
-Quả bóng 
-![alt text](point.png)
-Công cụ điều hướng bóng 
+
+![alt text](ball.png) quả bóng 
+![alt text](point.png) công cụ điều hướng bóng 
 
