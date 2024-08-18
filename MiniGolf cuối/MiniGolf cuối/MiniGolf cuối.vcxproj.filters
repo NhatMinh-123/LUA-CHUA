@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{e5e38036-a598-4a3a-81d9-1aa6b16eb1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\gfx">
+      <UniqueIdentifier>{400a07a5-89e3-4eef-af93-3c9b7adc3533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\sfx">
+      <UniqueIdentifier>{b9c097c0-51c8-43a8-bac5-5e4d41284344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\font">
+      <UniqueIdentifier>{5f3cc14d-cae9-4cc2-a896-15126a6eb5a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\.gitattributes">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\README.md">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\hole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\Ball.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\Entity.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\Hole.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\mymath.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\RenderWindow.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\src\Tile.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\ball.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\ball_shadow.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\bg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\click2start.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\end.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\endscreen_overlay.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\hole.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\levelText_bg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\logo.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\point.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\powermeter_bg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\powermeter_fg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\powermeter_overlay.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\splashBg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\tile32_dark.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\tile32_light.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\tile64_dark.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\tile64_light.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+    <Image Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\gfx\UI_bg.png">
+      <Filter>res\gfx</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\font\font.ttf">
+      <Filter>res\font</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\sfx\charge.mp3">
+      <Filter>res\sfx</Filter>
+    </Media>
+    <Media Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\sfx\hole.mp3">
+      <Filter>res\sfx</Filter>
+    </Media>
+    <Media Include="..\..\Twini-Golf-main (1)\Twini-Golf-main\res\sfx\swing.mp3">
+      <Filter>res\sfx</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

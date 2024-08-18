@@ -1,0 +1,43 @@
+﻿  ball.cpp
+  entity.cpp
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\Ball.h(59,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(52,37): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(56,37): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(60,49): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(64,49): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(66,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(66,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(88,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(88,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(98,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(102,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(104,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(105,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(128,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(128,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(138,39): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(155,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(155,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(182,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\ball.cpp(191,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  hole.cpp
+  main.cpp
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\Ball.h(59,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(295,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(295,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(313,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(313,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(341,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\main.cpp(405,43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  renderwindow.cpp
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(52,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(53,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(54,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(55,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(91,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(92,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(113,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Twini-Golf-main (1)\Twini-Golf-main\src\renderwindow.cpp(114,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  tile.cpp
+  Generating Code...
+  MiniGolf cuối.vcxproj -> I:\MiniGolf cuối\x64\Debug\MiniGolf cuối.exe
