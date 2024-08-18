@@ -10,7 +10,7 @@ Với mục tiêu để tạo ra một con game mang thiên hướng mini golf n
 # Windows
 Sau khi cài đặt môi trường Mingw64, SDL2, SDL_Image, SDL_TTF, and SDL_Mixer.
 
-![alt text](image-1.png)
+![alt text](image-6.png)
 File .exe sẽ ở trong mục ./bin. Để game chạy cần copy ./res folder và các .dll files từ trong thư viện SDL.
 
 # Bắt đầu game
