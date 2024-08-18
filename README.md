@@ -76,6 +76,11 @@ Khởi tạo và tải tài nguyên:
 
 Reference:
     Code:https://github.com/PolyMarsDev/Twini-Golf/tree/main
+    
     Graphic: PolymarsDev
-    Font:CstBerlinWest Original Regular : Download For Free, View Sample Text, Rating And More On Fontsgeek.Com 
+    
+    Font:CstBerlinWest Original Regular : Download For Free, View Sample 
+    
+    Text, Rating And More On Fontsgeek.Com 
+    
     Sound: https://freesound.org/
